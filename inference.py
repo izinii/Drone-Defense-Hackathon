@@ -8,11 +8,9 @@ model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
 results = model.train(data="VisDrone.yaml", epochs=100, imgsz=640)
 
 # Run inference on an image
-results = model("images/img2.jpg", show=True, save=True) # return a Result object
+results = model("images/img2.jpg", save=True) # return a Result object
 """
 
-# Display model information
-#print("\nModel info:", model.info(), "\n\n")
-
 model = YOLO("yolo11n_visdrone.pt")
+#print("\nModel info:", model.info(), "\n\n") # Display model information
 results = model("images/", save=True)

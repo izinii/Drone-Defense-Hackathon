@@ -15,8 +15,8 @@ class ZoneDetection:
 
         Returns:
         List[Dict]
-            A list of detected objects. Each object is represented as a dictionary with keys:
-            - 'type': str, the type of the detected object (e.g., 'car', 'person').
+            A list of detected zones/objects. Each item is represented as a dictionary with keys:
+            - 'type': str, the type of the detected item (e.g., 'fire', 'smoke').
             - 'bbox': Tuple[float], bounding box coordinates [x1, y1, x2, y2].
             - 'score': float, confidence score of the detection. (0-1 range)
         """
